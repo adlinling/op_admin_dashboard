@@ -18,7 +18,6 @@
     font-family: Helvetica;
     font-weight: bold;
     border: 1px black solid;
- 
   }
 
 
@@ -41,27 +40,35 @@
     grid-row: 1 / 2;
   }
 
-  .sidebaricons{
-    grid-column: 1 / 2;
+  
+  .sidebarlinks{
+
+    grid-column: 1 / 3;
     grid-row: 2 / 3;
+    
   }
 
 
-  .sidebartext{
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-  }
-
-  .sidebaricons ul, .sidebartext ul{
+  .links{
     display:grid;
-    gap: 20px;
-    font-size: 20px;
-    text-align:left;
-    list-style-type: none;
+    align-items: center;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 20px;
+    
   }
 
+  .linksicons{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
   
-  
+  .linkstexts{
+    display:flex;
+    justify-content:left;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
   .header{
     display:grid;
     grid-template-columns: 3fr 2fr;
