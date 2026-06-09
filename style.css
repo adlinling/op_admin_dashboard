@@ -6,28 +6,33 @@
   .container {
     text-align: center;
     display: grid;
-    height:100vh;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 4fr;
-    gap: 4px;
+    grid-template-rows:200px 4fr;
+    
   }
   
 
+  
   .container div {
-    padding: 15px;
+    
     font-family: Helvetica;
-    font-weight: bold;
-    border: 1px black solid;
+    
+    /*padding: 15px; */
   }
+ 
 
 
   .sidebar{
+    padding:15px;
+    font-weight: bold;
     color:white;
     display:grid;
+    
+    min-width:180px;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 10fr;
-    height: 100%;
-    background-color:rgb(3, 129, 240);
+    height:102%;
+    background-color:#1992d4;
     grid-column: 1 / 2;
     grid-row: 1 / 3;
     justify-content: center;
@@ -42,7 +47,7 @@
 
   
   .sidebarlinks{
-
+    
     grid-column: 1 / 3;
     grid-row: 2 / 3;
     
@@ -50,6 +55,7 @@
 
 
   .links{
+    padding:15px;
     display:grid;
     align-items: center;
     grid-template-columns: 1fr 5fr;
@@ -69,30 +75,42 @@
     grid-row: 1 / 2;
   }
 
+
   .header{
+    padding:15px;
+    font-weight: bold;
     display:grid;
     grid-template-columns: 3fr 2fr;
-    grid-template-rows: 2fr 3fr;
+    grid-template-rows: 100px 100px;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
   }
 
+  .header div{
+    border: 1px pink solid;
+  }
+
+  
   .search{
+    padding:15px;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
   }
 
   .user{
+    padding:15px;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
   }
 
   .hithere{
+    padding:15px;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
   }
 
   .actionbuttons{
+    padding:15px;
     display:flex;
     justify-content:right;
     align-items: center;
@@ -112,7 +130,7 @@
 
   .action{
     color:white;
-    background-color:rgb(3, 129, 240);
+    background-color:#1992d4;
     border-radius: 20px;
     width: 100px;
     height: 35px;
@@ -121,11 +139,14 @@
 
   .main{
     display:grid;
+    padding:20px;
+    gap:20px;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    background-color: rgb(232, 232, 232);
+    background-color:#e2e8f0;
+    height:100%;
 
   }
 
@@ -136,9 +157,12 @@
     grid-template-rows: 40px 1fr;
     grid-column: 1 / 2;
     grid-row: 1 / 3;
+    align-items: start;
+    
   }
 
   .yourprojects{
+    font-weight: bold;
     display:flex;
     justify-content:left;
     align-items: center;
@@ -149,23 +173,52 @@
   .projectslist{
     display:flex;
     flex-wrap:wrap;
-    gap: 10px;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+  }
+
+  .projectitem > div{
+    border: 1px blue solid;
   }
 
 
   .projectitem{
-    flex: 1 300px;
-    height: 200px;
-    background-color:rgb(250, 250, 250);
     
+    flex: 1 300px;
+    padding: 30px;
+    height:200px;
+    
+    background-color:rgb(250, 250, 250);
+    border-radius: 12px;
+    border-left: 12px rgb(235, 146, 2) solid;
+  }
+
+
+  .cardtitle{
+    font-weight: bold;
+    text-align:left;
+  }
+
+  .cardtext{
+    font-family: 'Times New Roman', Times, serif;
+    text-align:left;
+    font-size: 16px;
+    height: 80%;
+  }
+
+  .cardicons{
+    text-align:right;
   }
 
   .announcements{
+    padding:15px;
     display:grid;
     grid-template-columns: 1fr;
     grid-template-rows: 40px 1fr;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    
   }
 
 
@@ -175,12 +228,13 @@
     align-items: center;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+    font-weight: bold;
   }
 
 
   .announcemenitems{
     display:flex;
-    flex-wrap:wrap;
+    flex-direction:column;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
   }
@@ -189,9 +243,11 @@
     flex: 1;
     min-width:200px;
     height:100px;
+    border: 1px black solid;
   }
 
   .trending{
+    padding:15px;
     display:grid;
     grid-template-columns: 1fr;
     grid-template-rows: 40px 1fr;
@@ -201,6 +257,7 @@
 
 
   .trendingtitle{
+    font-weight: bold;
     display:flex;
     justify-content: left;
     align-items: center;
@@ -211,7 +268,7 @@
 
   .trendingitems{
     display:flex;
-    flex-wrap:wrap;
+    flex-direction:column;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
   }
@@ -220,4 +277,5 @@
     flex: 1;
     min-width:200px;
     height:100px;
+    border: 1px black solid;
   }
