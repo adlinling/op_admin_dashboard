@@ -99,21 +99,57 @@
   }
 
   .user{
-    display:grid;
-    padding-right:100px;
+    display:flex;
+    padding-right:150px;
     align-items: center;
     justify-content: right;
+    gap: 50px;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
   }
 
+  .user div{
+    border: 1px blue solid;
+  }
+
+
   .hithere{
-    padding:15px;
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: left;
+    width:50%;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
   }
 
+
+
   
+.hithereavatar{
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+}
+
+.hitheregreet{
+  text-align:left;
+  align-self:end;
+  padding-bottom:10px;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+
+.hithereuser{
+  text-align:left;
+  align-self:start;
+  font-size:22px;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+
+
   .actionbuttons{
     padding:15px;
     padding-right:100px;
@@ -132,6 +168,7 @@
     width:80%;
     height: 30px;
     border-radius: 20px;
+    border:none;
     background-color: rgb(238, 238, 238);
 
   }
@@ -142,6 +179,7 @@
     color:white;
     background-color:#1992d4;
     border-radius: 20px;
+    border:none;
     width: 100px;
     height: 40px;
     font-size:16px;
@@ -288,7 +326,7 @@
   }
 
 
-  .announcesubtitle, .trendingsubtitle{
+  .announcesubtitle, .trendinguser{
     font-weight: bold;
     text-align:left;
     
@@ -334,9 +372,29 @@
   }
 
   .trendingitem{
-    
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
     flex: 1;
     min-width:200px;
     height:100px;
     border: 1px black solid;
+    padding:10px;
   }
+
+.trendingavatar{
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+}
+
+.trendinguser{
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+
+.trendingtext{
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
