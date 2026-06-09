@@ -54,6 +54,7 @@
 
 
   .links{
+    font-size: 22px;
     padding:15px;
     display:grid;
     align-items: center;
@@ -68,6 +69,7 @@
   }
   
   .linkstexts{
+    
     display:flex;
     justify-content:left;
     grid-column: 2 / 3;
@@ -80,7 +82,7 @@
     font-weight: bold;
     display:grid;
     grid-template-columns: 3fr 2fr;
-    grid-template-rows: 100px 100px;
+    grid-template-rows: 80px 100px;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
   }
@@ -97,7 +99,10 @@
   }
 
   .user{
-    padding:15px;
+    display:grid;
+    padding-right:100px;
+    align-items: center;
+    justify-content: right;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
   }
@@ -108,8 +113,10 @@
     grid-row: 2 / 3;
   }
 
+  
   .actionbuttons{
     padding:15px;
+    padding-right:100px;
     display:flex;
     justify-content:right;
     align-items: center;
@@ -117,9 +124,13 @@
     grid-column: 2 / 3;
     grid-row: 2 / 3;
   }
+  
+
+
 
   .searchbox{
     width:80%;
+    height: 30px;
     border-radius: 20px;
     background-color: rgb(238, 238, 238);
 
@@ -127,12 +138,14 @@
 
 
 
-  .action{
+  button.action{
     color:white;
     background-color:#1992d4;
     border-radius: 20px;
     width: 100px;
-    height: 35px;
+    height: 40px;
+    font-size:16px;
+    font-weight:bold;
   }
 
 
@@ -164,18 +177,17 @@
   .projects div{
     border: 1px teal dashed;
   }
-  */
+  
 
-  
-  
   .projectitem > div{
     border: 1px blue solid;
   }
-  
+  */
 
 
   .yourprojects{
     font-weight: bold;
+    font-size:22px;
     display:flex;
     justify-content:left;
     align-items: center;
@@ -229,6 +241,9 @@
     list-style-type: none;
   }
 
+
+
+
   .announcements{
     padding:0px;
     display:grid;
@@ -236,11 +251,13 @@
     grid-template-rows: 40px 1fr;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    
   }
 
+  /*
   .announcements div{
     border: 1px blue solid;
-  }
+  }*/
 
 
   .announcetitle{
@@ -250,25 +267,43 @@
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     font-weight: bold;
+    font-size:22px;
   }
 
 
   .announcemenitems{
+    padding: 30px;
+    background-color: white;
     display:flex;
     flex-direction:column;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+    border-radius: 12px;
   }
 
   .announceitem{
     flex: 1;
     min-width:200px;
-    height:100px;
-    border: 1px black solid;
+    padding: 14px;   
   }
 
-  .trending{
+
+  .announcesubtitle, .trendingsubtitle{
+    font-weight: bold;
+    text-align:left;
     
+  }
+
+  .announcetext, .trendingtext{
+    padding-top: 6px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align:left;
+    font-size: 16px;
+    
+  }
+
+
+  .trending{    
     display:grid;
     grid-template-columns: 1fr;
     grid-template-rows: 40px 1fr;
@@ -279,6 +314,7 @@
 
   .trendingtitle{
     font-weight: bold;
+    font-size:22px;
     display:flex;
     justify-content: left;
     align-items: center;
@@ -288,13 +324,17 @@
 
 
   .trendingitems{
+    background-color: white;
+    padding: 36px;
     display:flex;
     flex-direction:column;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+    border-radius:12px;
   }
 
   .trendingitem{
+    
     flex: 1;
     min-width:200px;
     height:100px;
