@@ -358,13 +358,17 @@ img.profilepicsmall{
     height: 70%;
   }
 
-  .cardicons{
-    text-align:right;
+ 
+
+  .cardicons img{
+    width: 30px;
+    height:auto;
   }
 
   .cardicons ul{
     display: grid;
     padding: 8px;
+    gap: 30px;
     grid-template-columns: repeat(auto-fit, 18px);
     justify-content: right; 
     list-style-type: none;
